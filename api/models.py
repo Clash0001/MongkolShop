@@ -21,7 +21,7 @@ class Product(Base):
     image      = Column(String, nullable=True)
     categoryId = Column(String, ForeignKey("Category.id"), nullable=True)
     createdAt  = Column(DateTime, server_default=func.now())
-    updatedAt  = Column(DateTime, onupdate=func.now())
+    updatedAt  = Column(DateTime, nullable=True, onupdate=func.now())
 
     category   = relationship("Category", back_populates="products")
 
