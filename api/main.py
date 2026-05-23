@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import products
+from routers import products, transactions
 
 app = FastAPI(title="MongkolShop API")
 
@@ -12,6 +12,7 @@ app.add_middleware(
 )
 
 app.include_router(products.router)
+app.include_router(transactions.router)
 
 @app.get("/")
 def root():
