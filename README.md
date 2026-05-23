@@ -11,6 +11,15 @@ npx prisma studio
 
 จะเปิดหน้าต่าง browser ที่ `http://localhost:51212` อัตโนมัติ
 
+## รัน Web (Frontend)
+
+```bash
+cd web
+npm run dev
+```
+
+เปิดที่ `http://localhost:3000`
+
 ## รัน API (Backend)
 
 ```bash

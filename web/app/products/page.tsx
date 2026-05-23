@@ -29,6 +29,10 @@ export default function ProductsPage() {
   return (
     <div className="p-8">
       <h1 className="text-2xl font-bold mb-6">สินค้าทั้งหมด</h1>
+      <a href="/products/new"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        + เพิ่มสินค้า
+      </a>
       {loading ? (
         <p>กำลังโหลด...</p>
       ) : (
